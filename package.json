@@ -1,0 +1,42 @@
+{
+  "name": "notes-for-workspaces",
+  "displayName": "Notes For Workspaces",
+  "description": "Persistent Notion-style markdown notes, one per workspace. A Notion-inspired block editor with the famous '/' menu, to-dos, toggles, callouts, tables, code blocks and math. Paste text from Notion and it becomes blocks instantly. Each workspace keeps its own note.",
+  "version": "0.3.0",
+  "publisher": "alvarorosati",
+  "author": "Alvaro Rosati",
+  "license": "MIT",
+  "homepage": "https://sites.google.com/view/alvaro-rosati",
+  "bugs": {
+    "url": "https://sites.google.com/view/alvaro-rosati"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlPinkish/notes-for-workspaces.git"
+  },
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#2E3440",
+    "theme": "dark"
+  },
+  "keywords": ["notes", "notion", "markdown", "workspace", "todo", "journal", "scratchpad"],
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onView:workspaceNotes.panel"],
+  "main": "./extension/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        { "id": "notes-container", "title": "Notes For Workspaces", "icon": "media/icon.svg" }
+      ]
+    },
+    "views": {
+      "notes-container": [
+        { "type": "webview", "id": "workspaceNotes.panel", "name": "Note del workspace" }
+      ]
+    },
+    "commands": [
+      { "command": "workspaceNotes.open", "title": "Notes For Workspaces: apri il pannello note" }
+    ]
+  }
+}
