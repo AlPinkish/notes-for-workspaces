@@ -1,5 +1,4 @@
 .vscode/**
 *.vsix
 .git/**
-media/icon-original.png
 images/**

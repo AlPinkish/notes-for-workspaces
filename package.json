@@ -16,8 +16,8 @@
   },
   "icon": "media/icon.png",
   "galleryBanner": {
-    "color": "#2E3440",
-    "theme": "dark"
+    "color": "#FFFFFF",
+    "theme": "light"
   },
   "keywords": ["notes", "notion", "markdown", "workspace", "todo", "journal", "scratchpad"],
   "engines": { "vscode": "^1.80.0" },
